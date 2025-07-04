@@ -54,6 +54,9 @@ interface AgentProps {
   feedbackId?: string;
   type: "generate" | "interview";
   questions?: string[];
+  phoneNumber?: string; // For workflow triggers
+  profileImage?: string; // User profile image
+  mode?: "assistant" | "workflow"; // Choose between assistant and workflow mode
 }
 
 interface RouteParams {
